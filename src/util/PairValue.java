@@ -1,24 +1,24 @@
 package util;
 
-public class PairValue<K, V> {
+public class PairValue {
 
-	private K key;
-	private V value;
+	private String key;
+	private String value;
 	
-	public PairValue(K key, V value) {
+	public PairValue(String key, String value) {
 		this.key = key;
 		this.value = value;
 	}
 
-	public K getKey() {
+	public String getKey() {
 		return key;
 	}
 
-	public V getValue() {
+	public String getValue() {
 		return value;
 	}
 
-	public void setValue(V value) {
+	public void setValue(String value) {
 		this.value = value;
 	}
 	

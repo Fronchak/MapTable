@@ -4,14 +4,14 @@ public class HashCodeServiceDjb2 implements HashCodeService{
 
 	private int size;
 	
-	public HashCodeServiceDjb2(int size) {
-		this.size = size;
+	public HashCodeServiceDjb2() {
 	}
 	
 	public int getSize() {
 		return size;
 	}
 
+	@Override
 	public void setSize(int size) {
 		this.size = size;
 	}
