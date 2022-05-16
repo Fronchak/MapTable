@@ -19,11 +19,11 @@ public class HashCodeServiceDjb2 implements HashCodeService{
 	@Override
 	public int hashCode(Object obj) {
 		String objString = obj.toString();
-		int hash = 5381;
+		Long hash = 5381L;
 		for(int i = 0; i < objString.length(); i++) {
 			hash = (hash * 33) + ((Character)objString.charAt(i)).hashCode();
 		}
-		return hash % size;
+		return (int) (hash % size);
 	}
 	
 	
