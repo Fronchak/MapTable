@@ -1,5 +1,7 @@
 package dataStructure;
 
-public class MapTable {
+public class MapTable<K, V> {
 
+	
+	
 }
